@@ -15,7 +15,7 @@ public class Luke3 {
         int numberOfFirdays = 0;
         for (int year=1;year<2016;year++){
             if (daysSince010101 % 7 == 0) numberOfFirdays++;
-            daysSince010101 += isLeapYear(year) ? 364 : 365;
+            daysSince010101 += isLeapYear(year) ? 366 : 365;
         }
         System.out.println("Number of fridays " + numberOfFirdays);
     }
